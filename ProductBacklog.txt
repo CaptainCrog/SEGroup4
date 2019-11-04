@@ -1,0 +1,12 @@
+Product Backlog
+----------------
+Python GUI with button to call a function
+Python function to call to News API to get top headlines								
+Python function - keyword extractor, extracts keywords from a string (headline)
+Python function to call spotify API and produce a list of songs based on search strings (keywords from headlines)	
+Login system for python application
+Python GUI and associated back-end for editing/customising account details											
+Save files for remembering details to prevent logging in everytime									
+Look into linking accounts to spotify (generate personal playlists)
+HTML5/CSS/JS site for accessing the application through browser
+Mobile application version																								
