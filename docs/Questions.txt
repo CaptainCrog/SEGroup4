@@ -1,0 +1,8 @@
+Q: Do you want the app to filter by news type (politics, health, sport etc.)?
+A: It can be a feature but prioritise getting the days' news
+
+Q: Do you want to filter by news site (BBC, ABC, ITV, etc.)? 
+A: Look into the locale instead (GB, US)
+
+Q: Do you want each news headline in its own playlist or one big one?
+A: There should only be 1 playlist per query, therefore put all news headlines into 1 playlist

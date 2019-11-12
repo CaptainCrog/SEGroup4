@@ -1,3 +1,0 @@
-Build function for retrieving headlines - Ben and Josh
-Build function for keyword extraction - Yifan and Rob
-Build GUI for Application - Craig and Rob
