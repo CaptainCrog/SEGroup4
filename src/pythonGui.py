@@ -69,8 +69,6 @@ class GUI():
       
       filtersList = [ ]
       Location = ["global"]
-      print (filtersList)
-      print (len(filtersList))
 
       filterHeader = tkinter.Label(window, text = "News Filters", bg = "#191414", fg = "#1DB954", font=("Proxima Nova", 18))
       filterHeader.place(x = 75, y = 75, width = 490)
@@ -100,15 +98,5 @@ class GUI():
       returnHeadlines = tkinter.Button(window, text = "Display Results", command = lambda: returnHeadlinesCallBack(), bg = "#1DB954", fg= "#191414", font=("Proxima Nova", 12))
       returnHeadlines.place(bordermode=OUTSIDE, height = 25, width = 150,  x = 245, y = 440)
 
-      #resultHeader1 = tkinter.Label(window, text = "<News search result 1>", bg = "#191414", fg = "#1DB954", font=("Proxima Nova", 8))
-      #resultHeader1.place(y = 430, width = 800)
-      #resultHeader2 = tkinter.Label(window, text = "<News search result 2>", bg = "#191414", fg = "#1DB954", font=("Proxima Nova", 8))
-      #resultHeader2.place(y = 450, width = 800)
-      #resultHeader3 = tkinter.Label(window, text = "<News search result 3>", bg = "#191414", fg = "#1DB954", font=("Proxima Nova", 8))
-      #resultHeader3.place(y = 470, width = 800)
-      #resultHeader4 = tkinter.Label(window, text = "General election 2019: Labour vows to outspend Tories on the NHS", bg = "#191414", fg = "#1DB954", font=("Proxima Nova", 8))
-      #resultHeader4.place(y = 490, width = 800)
-      #resultHeader5 = tkinter.Label(window, text = "<News search result 5>", bg = "#191414", fg = "#1DB954", font=("Proxima Nova", 8))
-      #resultHeader5.place(y = 510, width = 800)
       window.mainloop()
 GUI()
