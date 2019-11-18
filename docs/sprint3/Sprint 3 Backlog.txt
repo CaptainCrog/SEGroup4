@@ -1,0 +1,11 @@
+Sprint 3 Backlog
+----------------
+
+Create spotify playlist based on keywords
+	- Research spotipy/spotify API (2 hours)
+	- Write function that creates playlist (3-4 hours)
+
+Get headlines to appear when 'display results' button is pressed
+    -Function that takes the headlines from the NewsAPI response JSON and displays them in a pop up. (1 hour)
+
+
