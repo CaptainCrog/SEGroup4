@@ -1,0 +1,14 @@
+Stand up meeting 3 - Summary
+-----------------------------
+
+What have we done?
+    - Converted existing code to python
+    - Added filters for location/topic (with checkboxes to support these features in GUI)
+
+What are we going to do?
+    - Generate spotify playlist based on keywords extracted from headlines
+    - Build functionality behind 'display results' button. Headlines should appear when button pressed.
+
+Is there anything we need help with?
+    - Research spotipy
+
