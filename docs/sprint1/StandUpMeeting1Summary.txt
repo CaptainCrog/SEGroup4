@@ -1,0 +1,25 @@
+Stand up meeting 1 - Summary
+-----------------------------
+
+What have we done?
+
+-Initial design of GUI
+-Set up Git Repo
+-Downloaded APIs/Libraries
+-Decided on Python over C#
+
+
+
+
+What are we going to do?
+
+-Build basic GUI in python
+-Write function to retrieve news headlines
+
+
+
+
+Is there anything we need help with?
+
+-We need more detailed user requirements
+-Better understanding of GIT
