@@ -1,12 +1,17 @@
 Sprint 2 Backlog
 ----------------
 
+Convert existing code to Python
+    (5-6 hours)
+
 Filter based on politics/health/technology etc...
     - Add to GUI - check boxes supporting these (hours 0.5)
     - Build function that takes the filters and edits the API request based on them (hours 1-2)
+
 Filter based on country
     - Add to GUI - drop down supporting this (hours 0.5)
     - Build function that takes the filters and edits the API request based on them (hours 1-2)
+    
 Finish GUI
     -Improve aesthetics (hours 1)
     -Improve layout (hours 0.5)

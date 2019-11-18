@@ -1,20 +1,16 @@
 Sprint 1 Backlog
 ----------------
 
-Build function for retrieving top headlines
+Build function for retrieving top headlines (C#)
 	- Request to NEWS API (hours 0.5)
 	- Parse JSON response (hours 0.5)
 	
-Build basic GUI
+Build basic GUI (C#)
 	- Design GUI on paper (hours 0.5)
 	- Download necessary libraries (hours 0.5)
 	- Place buttons and link to functions (hours 0.5)
 	
-Build function for extracting keywords from strings
+Build function for extracting keywords from strings (C#)
 	- Research best way to do this (1 hour)
 	- Download necessary libraries (hours 0.5)
 	- Build function (1-2 hours)
-	
-Create spotify playlist based on keywords
-	- Research spotipy/spotify API (1 hour)
-	- Write function that creates playlist (1-2 hours)

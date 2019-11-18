@@ -5,18 +5,13 @@ What have we done?
 
 -Initial design of GUI
 -Set up Git Repo
--Downloaded APIs/Libraries
--Decided on Python over C#
-
-
 
 
 What are we going to do?
 
--Build basic GUI in python
+-Build basic GUI in C#
 -Write function to retrieve news headlines
-
-
+-Write function for extracting key words
 
 
 Is there anything we need help with?

@@ -1,0 +1,18 @@
+Stand up meeting 1 - Summary
+-----------------------------
+
+What have we done?
+    - Built C# function for retrieving news headlines
+    - Built basic C# GUI
+    - Built C# function for extracting keywords
+
+
+What are we going to do?
+    -Convert existing code to Python, will be much easier in Python than C#
+    -Add filters based on politics, tech, business etc
+    -Filter based on location (UK/restOfWorld)
+
+
+Is there anything we need help with?
+    -Research how to do the things we did in C# in Python
+
