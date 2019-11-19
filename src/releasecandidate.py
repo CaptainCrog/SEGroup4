@@ -137,10 +137,7 @@ login.destroy()
 token = util.prompt_for_user_token(username, scope="playlist-modify-public", client_id="da5a1895b29f46b8aab5d2007dba9b9c", client_secret="4c5154e4ae7c4223ab08fee6540a2600", redirect_uri="http://localhost:8888/callback")
 spotify = spotipy.Spotify(auth=token)
 
-def getNewsCallBack(List, Location):
-    
-    now = str(datetime.datetime.now())
-    now = now[0:len(now)-7]
+def getNews(List, Location):
     headlines= []
     if len(List) == 0: 
         if "global" in Location:       
@@ -153,7 +150,30 @@ def getNewsCallBack(List, Location):
                 headlines.append(news.get_top_headlines(language='en',category=c))
         if "uk" in Location:       
             for c in List:    
-                headlines.append(news.get_top_headlines(country='gb', language='en', category=c))   
+                headlines.append(news.get_top_headlines(country='gb', language='en', category=c))
+    return headlines
+
+def getNewsCallBack(List, Location):
+    
+    now = str(datetime.datetime.now())
+    now = now[0:len(now)-7]
+    
+    headlines = getNews(List, Location)
+    '''
+    headlines= []
+    if len(List) == 0: 
+        if "global" in Location:       
+            headlines.append(news.get_top_headlines(language='en'))
+        if "uk" in Location:       
+            headlines.append(news.get_top_headlines(country='gb'))
+    if len(List) > 0:       
+        if "global" in Location:   
+            for c in List:    
+                headlines.append(news.get_top_headlines(language='en',category=c))
+        if "uk" in Location:       
+            for c in List:    
+                headlines.append(news.get_top_headlines(country='gb', language='en', category=c))
+    '''
     for h in headlines:   
         results=[]
     for h in headlines:
@@ -179,8 +199,18 @@ def getNewsCallBack(List, Location):
     webbrowser.open('https://open.spotify.com/playlist/'+test['id'])
   
 
-def returnHeadlinesCallBack():
-   tkinter.messagebox.showinfo("Headlines", "<Healines here>")
+def returnHeadlinesCallBack(List, Location):
+   titles = ''
+   for h in getNews(List, Location):
+       for i in range(5):
+           sentence = h['articles'][i]['title']
+           titles += sentence + '\n'
+           np_extractor = NPExtractor(sentence)
+           result = np_extractor.extract()
+           for j in result:
+               titles += j + '; '
+           titles += '\n\n'
+   tkinter.messagebox.showinfo("Headlines", titles)
 
 def sportsFilterCallBack(List):
    if "sports" in List:
@@ -268,7 +298,7 @@ class GUI():
       getNews = tkinter.Button(window, text ="Get Playlist", command = lambda: getNewsCallBack(filtersList, Location), bg = "#1DB954", fg= "#191414", font=("Proxima Nova", 24))
       getNews.place(bordermode=OUTSIDE, height = 75, width = 200,  x = 220, y = 355)
 
-      returnHeadlines = tkinter.Button(window, text = "Display Results", command = lambda: returnHeadlinesCallBack(), bg = "#1DB954", fg= "#191414", font=("Proxima Nova", 12))
+      returnHeadlines = tkinter.Button(window, text = "Display Results", command = lambda: returnHeadlinesCallBack(filtersList, Location), bg = "#1DB954", fg= "#191414", font=("Proxima Nova", 12))
       returnHeadlines.place(bordermode=OUTSIDE, height = 25, width = 150,  x = 245, y = 440)
 
       window.mainloop()

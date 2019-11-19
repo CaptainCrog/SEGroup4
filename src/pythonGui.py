@@ -2,6 +2,7 @@ from tkinter import *
 import tkinter.messagebox
 import tkinter
 
+
 def getNewsCallBack(List, Location):
    print (List)
    print (Location)
