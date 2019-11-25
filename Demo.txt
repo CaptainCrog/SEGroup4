@@ -1,0 +1,7 @@
+This is a demo of git commands for the report.
+
+It should be deleted.
+
+How are you reading this?!
+
+- love Josh
