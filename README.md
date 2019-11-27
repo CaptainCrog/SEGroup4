@@ -2,7 +2,7 @@
 
 Collaborative project for Software Engineering
 
-1) Download the application -> releasecandidate.py
+1) Download the application from the src folder -> releasecandidate.py
 
 2) Install Spotipy -> pip install spotipy
 
