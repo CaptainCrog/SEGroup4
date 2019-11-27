@@ -1,24 +1,23 @@
-# SEGroup4
+# SEGroup4 - Installation Instructions
+
 Collaborative project for Software Engineering
 
-The main file is releasecandidate.py
+1) Download the application -> releasecandidate.py
 
-Uses Spotipy
+2) Install Spotipy -> pip install spotipy
 
-"pip install spotipy"
+3) Install the NewsApi -> pip install --user newsapi-python
 
-NewsApi
+4) Install natural language toolkit -> pip install nltk
 
-"pip install newsapi-python"
+5) Download the Spotify_Logo.png file and place it in the same directory as the application (Otherwise an error will be thrown)
 
-(this might fail on INB computers, if so do pip install --user newsapi-python)
+6) Run the application -> python releasecandidate.py
 
-NLTK
+7) Enter your spotify username and hit OK. It will open up an internet browser.
 
-"pip install nltk"
+8) Copy the URL it takes you to. Paste it into the console window.
 
-.png files in src are required in the same directory as releasecandidate.py
+9) Press Get Playlist to generate a playlist.
 
-When your Spotify Username is entered, copy and paste the URL of the tab that opens up into the console
-
-If newsapi was installed with '--user', releasecandidate.py will have to be run in powershell, "python releasecandidate.py"
+Note - These extra steps would not be necessary in the next release but unfortunately we ran out of time.
