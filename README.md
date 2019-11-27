@@ -16,7 +16,7 @@ Collaborative project for Software Engineering
 
 7) Enter your spotify username and hit OK. It will open up an internet browser.
 
-8) Copy the URL it takes you to. Paste it into the console window.
+8) Copy the URL it takes you to. Paste it into the console window and hit enter, it should open the next UI up.
 
 9) Press Get Playlist to generate a playlist.
 
